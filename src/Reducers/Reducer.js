@@ -32,7 +32,7 @@ export const Reducer = (state = initialState, action) => {
         store: state.store.filter((item) => !(item.id === action.payload.id)),
       };
     case REMOVE_FEATURE:
-      console.log("fdasfsda");
+      console.log("Remove Feature Case");
       return {
         ...state,
         additionalPrice: state.additionalPrice - action.payload.price,
